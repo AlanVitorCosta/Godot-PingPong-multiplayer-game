@@ -1,0 +1,25 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Teste.gd" type="Script" id=1]
+
+[node name="Button" type="Button"]
+anchor_right = 1.0
+margin_left = 246.584
+margin_top = 99.9327
+margin_right = -244.416
+margin_bottom = 119.933
+text = "Get Data From Server"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_vertical_guides_": [ 320.522 ]
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = -207.0
+margin_top = 60.0
+margin_right = 365.0
+margin_bottom = 308.0
+
+[node name="HTTPRequest" type="HTTPRequest" parent="."]
+
+[connection signal="pressed" from="." to="." method="_on_Button_pressed"]
